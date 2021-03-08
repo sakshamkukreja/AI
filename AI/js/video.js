@@ -13,7 +13,8 @@ document.getElementById('btn_realtime').addEventListener('click', function(){
 document.getElementById('btn_video').addEventListener('change', function(){
     var file = document.getElementById('btn_video').files[0]
     var vid = document.getElementById('video')
-    vid.style.width = "100%"
+    vid.style.width = "730px"
+    vid.style.height = "410px"
     vid.src = URL.createObjectURL(file)
     vid.hidden = false
     vid.loop = true
